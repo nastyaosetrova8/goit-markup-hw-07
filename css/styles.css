@@ -7,6 +7,7 @@
   --color-background-page: #ffffff;
   --color-action: #404bbf;
   --color-action-secondary: #31d0aa;
+  --color-form: #8e8f99;
   --font-family-logo: "Raleway", sans-serif;
   --font-size-logo: 18px;
   --font-weight-logo: 800;
@@ -176,6 +177,8 @@ body {
     ),
     url(../images/herro-img.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--color-brand);
 }
 
@@ -223,11 +226,14 @@ body {
 }
 
 .advantages-svg-area {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
   padding: 24px 0;
   margin-bottom: 8px;
   background-color: var(--color-brand-light);
+  border-radius: 4px;
 }
 
 /* .vissually-hidden {
@@ -289,12 +295,12 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   background-color: var(--color-background-page);
+  border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 
 .card-info-wrapper {
-  padding: 32px 16px;
-  border-radius: 0px 0px 4px 4px;
+  padding: 32px 0px;
 }
 
 .social-list {
@@ -337,16 +343,18 @@ body {
   align-items: center;
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--color-form);
   border-radius: 4px;
+  color: var(--color-form);
 }
 
 .customers-list-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
 .customers-list-link:hover,
 .customers-list-link:focus {
+  color: var(--color-action);
   border-color: var(--color-action);
 }
 
@@ -365,6 +373,7 @@ body {
 
 .page-footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .page-footer-brand-desc {
@@ -388,19 +397,17 @@ body {
 }
 
 .social-list-title {
-  color: var(--color-background-page);
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  font-weight: 500;
-  margin-bottom: 16px;
+  color: var(--color-background-page);
 }
 
 .social-footer-list {
   display: flex;
-}
-
-.social-footer-list-item:not(:last-child) {
-  margin-right: 16px;
+  gap: 16px;
 }
 
 .social-footer-list-link {
@@ -476,6 +483,10 @@ body {
   background-color: var(--color-background-page);
 }
 
+.portfolio-card-link {
+  display: block;
+}
+
 .portfolio-card-info-wrapper {
   padding: 32px 16px;
   /* padding-bottom: 32px;
@@ -484,9 +495,8 @@ body {
   border-top: none;
 }
 
-.portfolio-card-link:hover .portfolio-card-info-wrapper,
-.portfolio-card-link:focus .portfolio-card-info-wrapper {
-  border-color: var(--color-brand-light);
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
