@@ -80,6 +80,8 @@ body {
 
 .page-header {
   border-bottom: 1px solid var(--color-secondary);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -330,6 +332,10 @@ body {
 }
 
 /* CUSTOMERS */
+
+.section-title.customers {
+  line-height: 1.1;
+}
 
 .customers-list {
   display: flex;
