@@ -31,7 +31,7 @@
           >
           <ul class="list nav-menu">
             <li class="nav-item">
-              <a class="link nav-link" href="./index.html">Studio</a>
+              <a class="link nav-link current" href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
               <a class="link nav-link" href="./portfolio.html">Portfolio</a>
@@ -66,7 +66,9 @@
       <section class="brand-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -74,7 +76,7 @@
 
       <section class="advantages-section section">
         <div class="container">
-          <h2 class="section-title" hidden>Advantages</h2>
+          <h2 class="section-title vissually-hidden">Advantages</h2>
           <ul class="card-set list">
             <li class="advantages-card">
               <div class="advantages-svg-area">
@@ -430,7 +432,7 @@
           <h2 class="section-title customers">Customers</h2>
           <ul class="list customers-list">
             <li class="customers-list-item">
-              <a href="" class="customers-list-link">
+              <a href="" class="customers-list-link link">
                 <svg
                   aria-label="company-ya-&-co"
                   class="customers-list-icon"
@@ -442,7 +444,7 @@
               </a>
             </li>
             <li class="customers-list-item">
-              <a href="" class="customers-list-link">
+              <a href="" class="customers-list-link link">
                 <svg
                   aria-label="company-tagline-here"
                   class="customers-list-icon"
@@ -454,7 +456,7 @@
               </a>
             </li>
             <li class="customers-list-item">
-              <a href="" class="customers-list-link">
+              <a href="" class="customers-list-link link">
                 <svg
                   aria-label="company"
                   class="customers-list-icon"
@@ -466,7 +468,7 @@
               </a>
             </li>
             <li class="customers-list-item">
-              <a href="" class="customers-list-link">
+              <a href="" class="customers-list-link link">
                 <svg
                   aria-label="company-foster-peters"
                   class="customers-list-icon"
@@ -478,7 +480,7 @@
               </a>
             </li>
             <li class="customers-list-item">
-              <a href="" class="customers-list-link">
+              <a href="" class="customers-list-link link">
                 <svg
                   aria-label="company-brand"
                   class="customers-list-icon"
@@ -490,7 +492,7 @@
               </a>
             </li>
             <li class="customers-list-item">
-              <a href="" class="customers-list-link">
+              <a href="" class="customers-list-link link">
                 <svg
                   aria-label="company-tag-line"
                   class="customers-list-icon"
@@ -523,7 +525,7 @@
           <p class="social-list-title">Social media</p>
           <ul class="list social-footer-list">
             <li class="social-footer-list-item">
-              <a href="" class="social-footer-list-link">
+              <a href="" class="social-footer-list-link link">
                 <svg
                   aria-label="instagram"
                   class="social-footer-list-icon"
@@ -535,7 +537,7 @@
               </a>
             </li>
             <li class="social-footer-list-item">
-              <a href="" class="social-footer-list-link">
+              <a href="" class="social-footer-list-link link">
                 <svg
                   aria-label="twitter"
                   class="social-footer-list-icon"
@@ -547,7 +549,7 @@
               </a>
             </li>
             <li class="social-footer-list-item">
-              <a href="" class="social-footer-list-link">
+              <a href="" class="social-footer-list-link link">
                 <svg
                   aria-label="facebook"
                   class="social-footer-list-icon"
@@ -559,7 +561,7 @@
               </a>
             </li>
             <li class="social-footer-list-item">
-              <a href="" class="social-footer-list-link">
+              <a href="" class="social-footer-list-link link">
                 <svg
                   aria-label="linkedin"
                   class="social-footer-list-icon"
@@ -574,5 +576,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- BACKDROP -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="modal-close-btn-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

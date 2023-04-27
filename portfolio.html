@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="portfolio-web-studio-service" />
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +20,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Portfolio</title>
   </head>
   <body>
     <!-- HEADER -->
@@ -33,7 +34,9 @@
               <a class="link nav-link" href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
-              <a class="link nav-link" href="./portfolio.html">Portfolio</a>
+              <a class="link nav-link current" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="nav-item">
               <a class="link nav-link" href="#">Contacts</a>
@@ -79,13 +82,21 @@
 
           <ul class="portfolio-card-set list">
             <li class="portfolio-card">
-              <a class="link portfolio-card-link" href=""
-                ><img
-                  src="./images/banking-app-interface-oncept.jpg"
-                  width="360"
-                  height="300"
-                  alt="Mobile application tabs"
-                />
+              <a class="link portfolio-card-link" href="">
+                <div class="thumb">
+                  <img
+                    src="./images/banking-app-interface-oncept.jpg"
+                    width="360"
+                    height="300"
+                    alt="Mobile application tabs"
+                  />
+                  <p class="description overlay-descr">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+
                 <div class="portfolio-card-info-wrapper">
                   <h2 class="info-title">Banking App Interface Concept</h2>
                   <p class="description">App</p>
@@ -223,10 +234,10 @@
           </p>
         </div>
         <div class="page-footer-social-list">
-          <h4 class="social-list-title">Social media</h4>
+          <p class="social-list-title">Social media</p>
           <ul class="list social-footer-list">
             <li class="social-footer-list-item">
-              <a href="" class="social-footer-list-link">
+              <a href="" class="social-footer-list-link link">
                 <svg
                   aria-label="instagram"
                   class="social-footer-list-icon"
@@ -238,7 +249,7 @@
               </a>
             </li>
             <li class="social-footer-list-item">
-              <a href="" class="social-footer-list-link">
+              <a href="" class="social-footer-list-link link">
                 <svg
                   aria-label="twitter"
                   class="social-footer-list-icon"
@@ -250,7 +261,7 @@
               </a>
             </li>
             <li class="social-footer-list-item">
-              <a href="" class="social-footer-list-link">
+              <a href="" class="social-footer-list-link link">
                 <svg
                   aria-label="facebook"
                   class="social-footer-list-icon"
@@ -262,7 +273,7 @@
               </a>
             </li>
             <li class="social-footer-list-item">
-              <a href="" class="social-footer-list-link">
+              <a href="" class="social-footer-list-link link">
                 <svg
                   aria-label="linkedin"
                   class="social-footer-list-icon"
