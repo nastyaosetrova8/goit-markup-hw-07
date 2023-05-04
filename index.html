@@ -19,6 +19,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/vars.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/backdrop-modal.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -41,6 +49,15 @@
             </li>
           </ul>
         </nav>
+
+        <!-- BTN MOBILE MENU OPEN BURGER --> 
+        <button class="mobile-menu-open js-open-menu" type="button">
+          <svg class="mobile-menu-open-icon" aria-label="page menu and contacts" width="32" height="22">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+<!-- //-->
+
         <address class="contacts-studio">
           <ul class="list contacts-menu">
             <li class="contact-item">
@@ -56,6 +73,100 @@
           </ul>
         </address>
       </div>
+
+<!-- ====== MOBILE MENU ======-->
+
+  <div class="mobile-menu js-menu-container">
+    <div class="container mobile-menu-container">
+    <button class="mobile-menu-close-btn js-close-menu" type="button">
+      <svg class="mobile-menu-close-btn-icon" aria-label="close button" width="8" height="8">
+        <use href="./images/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+
+    <div class="mobile-navigation">
+      <nav class="mobile-page-nav">
+        <ul class="list mobile-nav-menu">
+          <li class="mobile-nav-item">
+            <a class="link mobile-nav-link current" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="link mobile-nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="link mobile-nav-link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+      <div class="mobile-contacts">
+        <address class="mobile-contacts-studio">
+          <ul class="list mobile-contacts-menu">
+            <li class="mobile-contact-item">
+              <a class="link mobile-contact-link tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-contact-item">
+              <a class="link mobile-contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          </address>
+          <ul class="list mobile-social-list">
+            <li class="social-list-item">
+              <a href="" class="link social-list-link">
+                <svg
+                  aria-label="instagram"
+                  class="social-list-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#instagram"></use></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="link social-list-link">
+                <svg
+                  aria-label="twitter"
+                  class="social-list-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="link social-list-link">
+                <svg
+                  aria-label="facebook"
+                  class="social-list-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="link social-list-link">
+                <svg
+                  aria-label="linkedin"
+                  class="social-list-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
     </header>
 
     <!-- MAIN -->
@@ -85,8 +196,8 @@
                 </svg>
               </div>
 
-              <h3 class="info-title">Strategy</h3>
-              <p class="description">
+              <h3 class="section-info-title">Strategy</h3>
+              <p class="section-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -98,8 +209,8 @@
                 </svg>
               </div>
 
-              <h3 class="info-title">Punctuality</h3>
-              <p class="description">
+              <h3 class="section-info-title">Punctuality</h3>
+              <p class="section-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -111,8 +222,8 @@
                 </svg>
               </div>
 
-              <h3 class="info-title">Diligence</h3>
-              <p class="description">
+              <h3 class="section-info-title">Diligence</h3>
+              <p class="section-description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -124,8 +235,8 @@
                 </svg>
               </div>
 
-              <h3 class="info-title">Technologies</h3>
-              <p class="description">
+              <h3 class="section-info-title">Technologies</h3>
+              <p class="section-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -141,24 +252,24 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="card-set list">
             <li class="occupation-card">
-              <img
-                src="./images/website-development.jpg"
+              <img srcset="./images/what-are-we-doing-section/website-development.jpg 1x, ./images/what-are-we-doing-section/website-dev@2x.jpg 2x"
+                src="./images/what-are-we-doing-section/website-development.jpg"
                 width="360"
                 height="300"
                 alt="Website development"
               />
             </li>
             <li class="occupation-card">
-              <img
-                src="./images/monile-applications.jpg"
+              <img srcset="./images/what-are-we-doing-section/mobile-applications.jpg 1x, ./images/what-are-we-doing-section/mobile-app@2x.jpg 2x"
+                src="./images/what-are-we-doing-section/mobile-applications.jpg"
                 width="360"
                 height="300"
                 alt="Creation of mobile applications"
               />
             </li>
             <li class="occupation-card">
-              <img
-                src="./images/design.jpg"
+              <img srcset="./images/what-are-we-doing-section/design.jpg 1x, ./images/what-are-we-doing-section/design@2x.jpg 2x"
+                src="./images/what-are-we-doing-section/design.jpg"
                 width="360"
                 height="300"
                 alt="Website design"
@@ -173,10 +284,11 @@
       <section class="section team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
-          <ul class="card-set list">
+          <ul class="card-set team list">
             <li class="team-card">
               <img
-                src="./images/product-designer.jpg"
+              srcset="./images/team.jpg/product-designer.jpg 1x, ./images/team.jpg/product-designer@2x.jpg 2x"
+                src="./images/team.jpg/product-designer.jpg"
                 width="264"
                 height="260"
                 alt="Smiling man"
@@ -236,8 +348,8 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/frontend-developer.jpg"
+              <img srcset="./images/team.jpg/frontend-developer.jpg 1x, ./images/team.jpg/frontend-developer@2x.jpg 2x"
+                src="./images/team.jpg/frontend-developer.jpg"
                 width="264"
                 height="260"
                 alt="Smiling guy"
@@ -298,8 +410,8 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/marketing.jpg"
+              <img srcset="./images/team.jpg/marketing.jpg 1x, ./images/team.jpg/marketing@2x.jpg 2x"
+                src="./images/team.jpg/marketing.jpg"
                 width="264"
                 height="260"
                 alt="Smiling girl"
@@ -360,8 +472,8 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/ui-designer.jpg"
+              <img srcset="./images/team.jpg/ui-designer.jpg 1x, ./images/team.jpg/ui-designer@2x.jpg 2x"
+                src="./images/team.jpg/ui-designer.jpg"
                 width="264"
                 height="260"
                 alt="Smiling guy"
@@ -688,6 +800,14 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

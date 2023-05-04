@@ -1,0 +1,126 @@
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* === HEADER === */
+
+  .nav-logo {
+    margin-right: 76px;
+  }
+
+  .contacts-studio {
+    margin-left: auto;
+  }
+
+  .contacts-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+
+  .contact-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  /* ===== HERO =====*/
+
+  .brand-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    max-height: 600px;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  /* ===== OUR ADVANTAGES ===== */
+
+  .advantages-card {
+    flex-basis: calc((100% - var(--card-set-gap) * 3) / 4);
+  }
+
+  .advantages-svg-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    padding: 24px 0;
+    margin-bottom: 8px;
+    background-color: var(--color-brand-light);
+    border-radius: 4px;
+  }
+
+/* ===== WHAT ARE WE DOING ===== */
+
+.section.no-padding-top {
+  display: block;
+  padding-top: 0px;
+}
+
+.occupation-card {
+  flex-basis: calc((100% - var(--card-set-gap * 2)) / 3);
+}
+
+.section-title {
+  margin-bottom: 72px;
+  color: var(--color-brand);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/* ===== OUR TEAM ===== */
+
+/* .team-card {
+  flex-basis: calc((100% - var(--card-set-gap) * 3) / 4);
+} */
+
+
+/* ===== CUSTOMERS ===== */
+
+.customers-list-link {
+flex-basis: calc((100% - var(--card-set-gap) * 5) / 6);
+}
+
+
+/* ===== FOOTER ===== */
+
+.page-footer-container {
+flex-wrap: nowrap;
+}
+
+.footer-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.page-footer-brand-desc {
+  margin-right: 120px;
+}
+
+/* Footer FORM */
+
+.page-footer-form-subscribe {
+  margin-left: 80px;
+}
+
+
+/* ===== BACKDROP MODAL ===== */
+}
+
+
+
+
+/* ===== PORTFOLIO ===== */

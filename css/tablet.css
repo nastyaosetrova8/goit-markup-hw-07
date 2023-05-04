@@ -1,0 +1,196 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  /* === HEADER === */
+
+  .mobile-menu-open {
+    display: none;
+    align-items: center;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo {
+    margin-right: 120px;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .nav-link {
+    position: relative;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--color-brand);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-link.current {
+    color: var(--color-action);
+  }
+
+  .nav-link.current::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--color-action);
+    border-radius: 2px;
+  }
+
+  .contacts-studio {
+    display: block;
+  }
+
+  .contact-link {
+    color: var(--color-primary);
+    font-style: normal;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.02em;
+  }
+
+  .contact-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  /* ===== HERO =====*/
+
+  /* .brand-section {
+    max-width: 768px;
+    max-height: 436px; 
+  } */
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /* ====== OUR ADVANTAGES ===== */
+
+  .advantages-card {
+    flex-basis: calc((100% - var(--card-set-gap)) / 2);
+  }
+
+  /* ===== WHAT ARE WE DOING ===== */
+
+
+  /* ===== OUR TEAM ===== */
+
+  .card-set.team {
+    row-gap: 64px;
+    justify-content: center;
+  }
+  
+  .team-card {
+  width: 264px;
+  margin-left: 0;
+  margin-right: 0;}
+
+  /* .team-card {
+    flex-basis: calc((100% - var(--card-set-gap)) / 2);
+} */
+
+/* ===== CUSTOMERS ===== */
+
+.customers-list-link {
+flex-basis: calc((100% - var(--card-set-gap) * 2) / 3);
+}
+
+
+
+/* ===== FOOTER ===== */
+
+.page-footer-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: start;
+  width: 100%;
+}
+
+.page-footer-brand-desc {
+  margin-right: 24px;
+margin-bottom: 72px;
+}
+
+.page-footer-brand-desc .secondary-logo {
+  text-align: start;
+}
+
+.slogan {
+  width: 264px;
+}
+
+/* Footer SOCIAL */
+
+.social-list-title {
+  text-align: start;
+}
+
+
+/* Footer FORM */
+
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+.footer-form-input-desc {
+  text-align: start;
+}
+
+.footer-form-input {
+  margin-right: 24px;
+  margin-bottom: 0;
+  width: 264px;
+}
+
+.page-footer-form-subscribe {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* ===== BACKDROP MODAL ===== */
+
+.modal {
+  max-width: 408px;
+}
+}
+
+ 
+
+/* ===== PORTFOLIO ===== */

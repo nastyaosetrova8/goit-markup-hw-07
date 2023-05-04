@@ -1,0 +1,18 @@
+:root {
+    --color-brand: #2e2f42;
+    --color-brand-light: #f4f4fd;
+    --color-logo-primary: #4d5ae5;
+    --color-primary: #434455;
+    --color-secondary: #e7e9fc;
+    --color-background-page: #ffffff;
+    --color-action: #404bbf;
+    --color-action-secondary: #31d0aa;
+    --color-form: #8e8f99;
+    --color-modal: #fcfcfc;
+    --font-family-logo: "Raleway", sans-serif;
+    --font-size-logo: 18px;
+    --font-weight-logo: 800;
+    --card-set-gap: 24px;
+    --duration-action: 250ms;
+    --timing-function-action: cubic-bezier(0.4, 0, 0.2, 1);
+  }
