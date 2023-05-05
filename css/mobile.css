@@ -577,6 +577,11 @@ color: var(--color-logo-primary);
   margin-top: 8px;
 }
 
+.social-list-icon.mobile {
+width: 24px;
+height: 24px;
+  }
+
 /* ===== BACKDROP MODAL ===== */
 
 /* В ОКРЕМОМУ ФАЙЛІ CSS - backdrop-modal.css */

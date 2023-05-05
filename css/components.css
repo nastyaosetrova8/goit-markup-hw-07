@@ -113,8 +113,7 @@ body {
 }
 
 
-.description {
-  margin-bottom: 8px; 
+.description { 
   font-style: normal;
   font-weight: 400;
   line-height: calc(24 / 16) ;

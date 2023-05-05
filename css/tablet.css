@@ -154,7 +154,7 @@ margin-bottom: 72px;
 }
 
 .slogan {
-  width: 264px;
+min-width: 264px;
 }
 
 /* Footer SOCIAL */
