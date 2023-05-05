@@ -126,6 +126,10 @@
 flex-basis: calc((100% - var(--card-set-gap) * 2) / 3);
 }
 
+.customers-list-icon {
+  width: 104px;
+}
+
 
 
 /* ===== FOOTER ===== */
@@ -189,8 +193,35 @@ margin-bottom: 72px;
 .modal {
   max-width: 408px;
 }
-}
+
 
  
 
 /* ===== PORTFOLIO ===== */
+
+.portfolio-section {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.portfolio-btn-set {
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.portfolio-btn {
+  padding: 12px 24px;
+}
+
+.portfolio-card-set {
+  flex-direction: row;
+  gap: 72px 24px;
+}
+
+.portfolio-card {
+  max-width: 356px;
+  width: 100%;
+  
+  /* flex-basis: calc((100% - var(--card-set-gap)) / 2); */
+}
+}

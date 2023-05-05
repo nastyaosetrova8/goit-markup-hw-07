@@ -118,9 +118,30 @@ flex-wrap: nowrap;
 
 
 /* ===== BACKDROP MODAL ===== */
-}
+
 
 
 
 
 /* ===== PORTFOLIO ===== */
+
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-btn-set {
+  margin-bottom: 72px;
+}
+
+.portfolio-card-set {
+  gap: 48px 24px;
+}
+
+.portfolio-card {
+  max-width: 360px;
+  width: 100%;
+  
+  /* flex-basis: calc((100% - var(--card-set-gap * 2)) / 3); */
+}
+}
